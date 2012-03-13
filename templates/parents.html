@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <!-- Facebook sharing information tags -->
+        <meta property="og:title" content="%%emailname_%%" />
+        
+        <title>%%emailname_%%</title>
+		<style type="text/css">
+			/* Client-specific Styles */
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+			body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
+
+			/* Reset Styles */
+			body{margin:0; padding:0;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table td{border-collapse:collapse;}
+			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+			/* Template Styles */
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COMMON PAGE ELEMENTS /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Page
+			* @section background color
+			* @tip Set the background color for your email. You may want to choose one that matches your company's branding.
+			* @theme page
+			*/
+			body, #backgroundTable{
+				/*@editable*/ background-color:#FAFAFA;
+			}
+
+			/**
+			* @tab Page
+			* @section email border
+			* @tip Set the border for your email.
+			*/
+			#templateContainer{
+				/*@editable*/ border: 1px solid #DDDDDD;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 1
+			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+			* @style heading 1
+			*/
+			h1, .h1{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:34px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 2
+			* @tip Set the styling for all second-level headings in your emails.
+			* @style heading 2
+			*/
+			h2, .h2{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:30px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 3
+			* @tip Set the styling for all third-level headings in your emails.
+			* @style heading 3
+			*/
+			h3, .h3{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:26px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 4
+			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+			* @style heading 4
+			*/
+			h4, .h4{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:22px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Header
+			* @section preheader style
+			* @tip Set the background color for your email's preheader area.
+			* @theme page
+			*/
+			#templatePreheader{
+				/*@editable*/ background-color:#FAFAFA;
+			}
+
+			/**
+			* @tab Header
+			* @section preheader text
+			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+			*/
+			.preheaderContent div{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Header
+			* @section preheader link
+			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+			*/
+			.preheaderContent div a:link, .preheaderContent div a:visited, /* Yahoo! Mail Override */ .preheaderContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			.preheaderContent img{
+				display:inline;
+				height:auto;
+				margin-bottom:10px;
+				max-width:280px;
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Header
+			* @section header style
+			* @tip Set the background color and border for your email's header area.
+			* @theme header
+			*/
+			#templateHeader{
+				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ border-bottom:0;
+			}
+
+			/**
+			* @tab Header
+			* @section header text
+			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+			*/
+			.headerContent{
+				/*@editable*/ color:#202020;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:34px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ padding:0;
+				/*@editable*/ text-align:center;
+				/*@editable*/ vertical-align:middle;
+			}
+
+			/**
+			* @tab Header
+			* @section header link
+			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+			*/
+			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			#headerImage{
+				height:auto;
+				max-width:320px !important;
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Body
+			* @section body style
+			* @tip Set the background color for your email's body area.
+			*/
+			#templateContainer, .bodyContent{
+				/*@editable*/ background-color:#FFFFFF;
+			}
+
+			/**
+			* @tab Body
+			* @section body text
+			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+			* @theme main
+			*/
+			.bodyContent div{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Body
+			* @section body link
+			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			*/
+			.bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override */ .bodyContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.bodyContent img{
+				display:inline;
+				height:auto;
+				margin-bottom:10px;
+				max-width:280px;
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Footer
+			* @section footer style
+			* @tip Set the background color and top border for your email's footer area.
+			* @theme footer
+			*/
+			#templateFooter{
+				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ border-top:0;
+			}
+
+			/**
+			* @tab Footer
+			* @section footer text
+			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+			* @theme footer
+			*/
+			.footerContent div{
+				/*@editable*/ color:#707070;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:11px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Footer
+			* @section footer link
+			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+			*/
+			.footerContent div a:link, .footerContent div a:visited, /* Yahoo! Mail Override */ .footerContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.footerContent img{
+				display:inline;
+			}
+
+			/**
+			* @tab Footer
+			* @section social bar style
+			* @tip Set the background color and border for your email's footer social bar.
+			* @theme footer
+			*/
+			#social{
+				/*@editable*/ background-color:#FAFAFA;
+				/*@editable*/ border:0;
+			}
+
+			/**
+			* @tab Footer
+			* @section social bar style
+			* @tip Set the background color and border for your email's footer social bar.
+			*/
+			#social div{
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Footer
+			* @section utility bar style
+			* @tip Set the background color and border for your email's footer utility bar.
+			* @theme footer
+			*/
+			#utility{
+				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ border:0;
+			}
+
+			/**
+			* @tab Footer
+			* @section utility bar style
+			* @tip Set the background color and border for your email's footer utility bar.
+			*/
+			#utility div{
+				/*@editable*/ text-align:left;
+			}
+
+			#monkeyRewards img{
+				display:inline;
+				height:auto;
+				max-width:280px;
+			}
+		</style>
+	</head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    	<center>
+        	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable">
+            	<tr>
+                	<td align="center" valign="top">
+                        <!-- // Begin Template Preheader \\ -->
+                        <table border="0" cellpadding="10" cellspacing="0" width="320" id="templatePreheader">
+                            <tr>
+                                <td valign="top" class="preheaderContent">
+                                
+                                	<!-- // Begin Module: Standard Preheader \\ -->
+                                    <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                    	<tr>
+                                        	<td valign="top">
+                                            	<div mc:edit="std_preheader_content">
+                                                	<h4>In this issue:</h4>
+													<ul>
+														<li>Coming Soon: Upcoming Events Calendar</li>
+														<li>News you can use! 
+															<ul>
+																<li>If your daughter is a senior...</li>
+																<li>If your daughter is a junior...</li>
+																<li>If your daughter is a sophomore...</li>
+																<li>If your daughter is a first year...</li>
+															</ul>
+														<li>"It's a Bryn Mawr thing."</li>
+													</ul>
+														
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                	<!-- // End Module: Standard Preheader \\ -->
+                                
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // End Template Preheader \\ -->
+                    	<table border="0" cellpadding="0" cellspacing="0" width="320" id="templateContainer">
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Header \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="320" id="templateHeader">
+                                        <tr>
+                                            <td class="headerContent">
+                                            
+                                            	<!-- // Begin Module: Standard Header Image \\ -->
+                                            	<img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_320.gif" style="max-width:320px;" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            	<!-- // End Module: Standard Header Image \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Header \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Body \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="320" id="templateBody">
+                                    	<tr>
+                                            <td valign="top" class="bodyContent">
+                                
+                                                <!-- // Begin Module: Standard Content \\ -->
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="top">
+                                                            <div mc:edit="std_content00">
+                                                                <h1 class="h1">Bryn Mawr College</h1>
+                                                                <h2 class="h2">News for Parents and Families</h2>
+                                                               
+                                                                <strong>Hello!</strong>  This space is reserved for short notes from people on campus, or a survey, or happy, exciting stuff, like graduation, pumpkins and a link to the flickr slide show. I can envision other administrators contributing to this section once a year. For example, The Director of Public Safety, Director of Residential Life, Athletics Director, CFO... to keep the faces fresh and familiar. 
+																<br />
+																<br />
+																We would love to hear your thoughts about the newsletter and hope you will give us your feedback. 
+																<br />
+																<br />
+																&ndash;Dean Michelle Rasmussen  
+																<br />
+																<br />
+																
+																<h3>Coming Soon</h3>
+                                                                <h4><a href="http://www.brynmawr.edu/calendar/" target="_blank">Events on Campus</a></h4>
+																<strong>March 12, 2012</strong>
+																Classes resume
+																<br />
+
+																<strong>March 16, 2012</strong>
+																Last day of First Quarter spring classes
+
+																<br />
+																<strong>March 19, 2012</strong>
+																Start of Second Quarter spring classes
+
+																<br />
+																<a href="http://www.brynmawr.edu/calendar/" target="_blank">More Campus Events &rarr;</a>
+																<br />
+																<br />
+
+																<h4><a href="http://www.brynmawr.edu/athletics/intercollegiate/" target="_blank">Athletics</a></h4>
+
+																<a href="http://mc.brynmawr.edu/MasterCalendar/EventDetails.aspx?data=hHr80o3M7J5AvApCCwHKCVNryv8X9iMS1KLQUTXNw0Q%3d" target="_blank"><strong>Basketball vs Washington</strong></a>
+																<br />
+																Tuesday, January 17, 2012
+																7:00PM to 10:00PM at Schwartz Gym
+																<br />
+
+																<a href="http://mc.brynmawr.edu/MasterCalendar/EventDetails.aspx?data=hHr80o3M7J6TEDJjbdu6Ff3B8tIKIa1qR0Y7glNyU9o%3d" target="_blank"><strong>Swimming @ Swarthmore</strong></a>
+																<br />
+																Wednesday, January 18, 2012
+																6:00PM in Swarthmore, Pa.
+																<br />
+
+																<a href="http://www.brynmawr.edu/athletics/intercollegiate/" target="_blank">More Athletics News &rarr;</a>
+																<br />
+																<br />
+
+																<h4><a href="http://www.brynmawr.edu/athletics/intercollegiate/" target="_blank">Arts</a></h4>
+
+																<a href="http://bmcpas.blogs.brynmawr.edu/2012/01/09/ying-quartet-plays-bryn-mawr/" target="_blank"><strong>Classical Music: The Ying Quartet</strong></a>
+																<br />
+																Friday, January 20, 8 p.m. 
+																Thomas Great Hall
+																<br />
+
+																<a href="http://bmcpas.blogs.brynmawr.edu/category/john-jasperse/" target="_blank"><strong>Dance: John Jasperse Company, Fort Blossom</strong></a>
+																<br />
+																Friday – Sunday February 24-26
+																8 p.m. Friday, 2 p.m. and 8 p.m. Saturday, 2 p.m. Sunday
+																Hepburn Teaching Theater, Goodhart Hall	
+                                                                <br />
+																<a href="http://www.brynmawr.edu/arts/series.html" target="_blank">More Arts Events &rarr;</a>
+																<br />
+																<br />
+																
+                                                                <h3>News you can use!</h3>
+																<h4>If your daughter is a senior...</h4>
+																<a href="http://www.brynmawr.edu/conferences/commencement/" target="_blank"><strong>Convocation and Commencement</strong></a> for the Class of 2012 will be held on Friday 12 May and Saturday 13 May. 
+																<br />
+																<br />
+																The full schedule of activities for the most important weekend of your Mawrter's life may be found <a href="http://www.brynmawr.edu/conferences/commencement/" target="_blank">on our website</a>. Lodging information, accessibility information, maps, directions and move out information may be found on the website. If you have questions, please do not hesitate to call the Information Desk at (610) 526-7330
+																<br />
+																<br />
+																<a href="http://www.haverford.edu/cdo" target="_blank"><strong>Career Development Office</strong></a>
+																<br />
+																The Bi-Co Career Development Office offers students resume` review, networking services, career counseling help and a host of other services. If your daughter has not yet connected with the "CDO" it is not too late to get started. Bryn Mawr offers current students and alumnae help in every aspect of the career search. <a href="http://www.haverford.edu/cdo" target="_blank">Visit their website</a> to learn about all they have to offer!
+																<br />
+																<br />
+																<h4>If your daughter is a junior...</h4>
+																
+																<a href="http://www.brynmawr.edu/fellowships/" target="_blank"><strong>Fellowships applications and Summer Funding applications</strong></a>, particularly the Hanna Holborn Gray Summer Internship Grant applications, are coming due. 
+																<br />
+																<br />
+																<a href="http://www.haverford.edu/cdo" target="_blank"><strong>Get to know the CDO!</strong></a> If your daughter hasn't been talking about the externship program, or the recruiters who come to campus, or the networking events, now is a good time to tell her to make some friends in the Career Development Office. The CDO is a Bi-Co office and offers many services for career preparation as well as preparation for graduate school.  
+
+																<br />
+																<br />
+																And, Room Draw!
+																<br />
+																<br />
+																<h4>If your daughter is a sophomore...</h4>
+																<a href="http://www.brynmawr.edu/oip/abroad/" target="_blank"><strong>Study abroad applications</strong></a> are due this spring. There are various deadlines contingent upon program. <a href="http://www.brynmawr.edu/oip/abroad/" target="_blank">Visit the Study Abroad website</a> to learn more.
+
+																<br />
+																<br />
+																<strong>Sophomores need to <a href="http://www.brynmawr.edu/deans/major/howtodeclare.shtml" target="_blank">declare a major</a> this spring</strong>, or submit an application to complete an <a href="http://www.brynmawr.edu/deans/major/design_ind_mjr.shtml" target="_blank">independent major</a>.  Click on the links to learn more about advising and the major process.
+																<br />
+																<br /> 
+																If your student has a passion for research, or wants to explore something new, <a href="http://www.brynmawr.edu/summerfunding/" target="_blank"><strong>summer funding is available</strong></a>. Information sessions for several funding opportunities are offered in January, deadlines for Summer Funding applications are due in February and March. 
+																<br />
+																<br />
+																Fellowships info sessions and deadlines are coming up fast. Sophomores need to learn about these important opportunities now, so that they are poised to compete next fall and spring. A complete schedule, links to information and contact information may be found at: http://www.brynmawr.edu/fellowships/deadlines.html
+																<br />
+																<br />
+																ROOM DRAW!
+																<br />
+																<br />
+																<h4>If your daughter is a first year...</h4>
+																Remember those nice people who welcomed your daughter to campus? They were customspeople. This spring is the time for your daughter to consider becoming a customsperson.  Applications will be due this spring as well as applications to become Community Diversity Assistants, Tour Guides, Student Bloggers and a host of other positions on campus. https://brynmawr.studentemployment.ngwebsolutions.com/
+																<br />
+																<br />
+																<h3>"It's a Bryn Mawr thing."</h3>
+																<strong>Let's Talk About Room Draw  ( I think we should ask a student Traditions Mistress, Customs to be a guest writer every month. Topic of her choice...Hell Week? May Day? Club Canaday? Special Dinners?)</strong>
+
+																<br />
+																<br />What can one say about Room Draw? It is fair. It is complicated. It develops strategic thinking skills, (ie. if you are willing to share you might qualify for some sweet digs). It can be stressful, fun, and did we say it can be complicated? Asking your daughter about room draw during the room draw frenzy is a roll of the dice. Liken it to the following questions from your past experience. 
+																<ul>
+																	<li>How is your college essay coming along?</li>
+																	<li>Do you think you'll be going to prom?</li>
+																	<li>Would you like me to make the appointment for your second driver's license test, or do you want to make it yourself? </li>
+																	</ul>
+																	However the conversation goes, rest assured, we have a place for her!
+																<br />
+																<br />
+                                                            </div>
+														</td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Content \\ -->
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Body \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Footer \\ -->
+                                	<table border="0" cellpadding="10" cellspacing="0" width="320" id="templateFooter">
+                                    	<tr>
+                                        	<td valign="top" class="footerContent">
+                                            
+                                                <!-- // Begin Module: Standard Footer \\ -->
+                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td colspan="2" valign="middle" id="social">
+                                                            <div mc:edit="std_social">
+                                                                <a href="http://twitter.com/BrynMawrCollege">Follow on Twitter</a> <br /> <a href="http://www.facebook.com/BrynMawrCollege">Like on Facebook</a> <br /> <a href="%%ftaf_url%%">Forward to a friend</a>&nbsp;
+
+
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" width="100%">
+                                                            <br />
+                                                            <div mc:edit="std_footer">
+																<em>Copyright &copy; *|CURRENT_YEAR|* %%Member_Busname%%, 	%%Member_Addr%% 
+																	%%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%</em>
+															
+                                                            </div>
+                                                          
+                                                           
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" valign="middle" id="utility">
+                                                            <div mc:edit="std_utility">
+																This email was sent to %%emailaddr%% from %%Member_Busname%% because you are a parent or family member of a Bryn Mawr College student. If this is incorrect or you would like to stop receiving emails, you can <a href="%%profile_center_url%%" alias="Update Your Subscription" target="_blank" >unsubscribe from this list</a>.
+																<br />
+																<br />
+																Having trouble viewing this email? <a href="%%view_email_url%%" target="_blank">View this email as a webpage</a>.
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Footer \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Footer \\ -->
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
