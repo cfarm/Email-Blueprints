@@ -341,14 +341,16 @@
 				height:auto;
 				max-width:280px;
 			}
-			
+			/*CSS for mobile devices. Attribute selector used so that Yahoo! mail will ignore styles*/
 			@media (max-width:600px) {
 				
 				* { -webkit-text-size-adjust:none; }
 				
 				table[id=backgroundTable], table[id=templatePreheader], table[id=templateContainer], table[id=templateHeader], table[id=templateBody], table[id=templateFooter] {
-					width:100%!important;
-					
+					width:100% !important;
+					max-width:600px !important;	
+					padding:0;
+					margin:0;	
 				}
 				
 			}
