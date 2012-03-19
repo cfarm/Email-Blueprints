@@ -131,7 +131,10 @@
 			* @theme page
 			*/
 			#templatePreheader{
-				/*@editable*/ background-color:#FAFAFA;
+				/*@editable*/ background-color:#003479;
+				background-image: url('http://www.brynmawr.edu/web/images/header.gif');
+				background-repeat:no-repeat;
+				
 			}
 
 			/**
@@ -140,11 +143,16 @@
 			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
 			*/
 			.preheaderContent div{
-				/*@editable*/ color:#505050;
+				/*@editable*/ color:#fff;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:10px;
+				/*@editable*/ font-size:12px;
 				/*@editable*/ line-height:100%;
 				/*@editable*/ text-align:left;
+			}
+			.preheaderContent h4 {
+				color:#fff;
+				font-size:14px;
+				text-transform:uppercase;
 			}
 
 			/**
@@ -153,7 +161,7 @@
 			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
 			*/
 			.preheaderContent div a:link, .preheaderContent div a:visited, /* Yahoo! Mail Override */ .preheaderContent div a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#336699;
+				/*@editable*/ color:#fff0b3;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -174,7 +182,7 @@
 			* @theme header
 			*/
 			#templateHeader{
-				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ background-color:#000;
 				/*@editable*/ border-bottom:0;
 				border-spacing:0;
 			}
@@ -185,7 +193,7 @@
 			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
 			*/
 			.headerContent{
-				/*@editable*/ color:#202020;
+				/*@editable*/ color:#fff;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:34px;
 				/*@editable*/ font-weight:bold;
@@ -353,6 +361,14 @@
 					margin:0;	
 				}
 				
+				td[class=headerContent] h1, td[class=headerContent] h2 {
+					display:inline !important;
+					visibility:visible !important;
+				}
+				
+				td[class=headerContent] img[id=title] {
+					display:none !important;
+				}
 			}
 		</style>
 	</head>
@@ -367,7 +383,7 @@
                                 <td valign="top" class="preheaderContent">
                                 
                                 	<!-- // Begin Module: Standard Preheader \\ -->
-                                    <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                     	<tr>
                                         	<td valign="top">
                                             	<div>
@@ -378,12 +394,7 @@
 													<ul>
 														<li><a href="#comingsoon">Coming Soon: Upcoming Events Calendar</a></li>
 														<li>News you can use! 
-															<ul>
-																<li>If your daughter is a senior...</li>
-																<li>If your daughter is a junior...</li>
-																<li>If your daughter is a sophomore...</li>
-																<li>If your daughter is a first year...</li>
-															</ul>
+											
 														<li>"It's a Bryn Mawr thing."</li>
 													</ul>
 														
@@ -404,9 +415,13 @@
                                 	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateHeader">
                                         <tr>
                                             <td class="headerContent">
-                                            
+	
+                                            <a href="http://www.brynmawr.edu/gateways/parents"><img src="http://www.brynmawr.edu/web/images/title.gif" alt="Bryn Mawr College" title="Bryn Mawr College News for Parents and Families" id="title">
+											<h1 class="h1" style="display:none;visibility:hidden;">Bryn Mawr College</h1><h2 class="h2" style="display:none;visibility:hidden;">News for Parents and Families</h2></a>
+
+
                                             	<!-- // Begin Module: Standard Header Image \\ -->
-                                            	<img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_320.gif" style="max-width:320px;" id="headerImage campaign-icon" />
+                                            	<img src="http://www.brynmawr.edu/web/images/hero.jpg" style="max-width:600px;" id="headerImage campaign-icon" />
                                             	<!-- // End Module: Standard Header Image \\ -->
                                             
                                             </td>
@@ -427,7 +442,6 @@
                                                     <tr>
                                                         <td valign="top">
                                                             <div>
-<h1 class="h1">Bryn Mawr College</h1><h2 class="h2">News for Parents and Families</h2>
 <strong>Hello!</strong>  This space is reserved for short notes from people on campus, or a survey, or happy, exciting stuff, like graduation, pumpkins and a link to the flickr slide show. I can envision other administrators contributing to this section once a year. For example, The Director of Public Safety, Director of Residential Life, Athletics Director, CFO... to keep the faces fresh and familiar. <br /><br />
 We would love to hear your thoughts about the newsletter and hope you will give us your feedback.
 <br />
