@@ -30,7 +30,7 @@
 			* @theme page
 			*/
 			body, #backgroundTable{
-				/*@editable*/ background-color:#FAFAFA;
+				/*@editable*/ background-color:#8BA3C2;
 			}
 
 			/**
@@ -39,7 +39,8 @@
 			* @tip Set the border for your email.
 			*/
 			#templateContainer{
-				/*@editable*/ border: 1px solid #DDDDDD;
+				border-left: 1px solid #8BA3C2;
+				border-right:1px solid #8BA3C2;
 			}
 
 			/**
@@ -51,8 +52,8 @@
 			h1, .h1{
 				/*@editable*/ color:#202020;
 				display:block;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:34px;
+				/*@editable*/ font-family:Georgia;
+				/*@editable*/ font-size:28px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
 				margin-top:0;
@@ -71,8 +72,8 @@
 			h2, .h2{
 				/*@editable*/ color:#202020;
 				display:block;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:30px;
+				/*@editable*/ font-family:Georgia;
+				/*@editable*/ font-size:24px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
 				margin-top:0;
@@ -91,8 +92,8 @@
 			h3, .h3{
 				/*@editable*/ color:#202020;
 				display:block;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:26px;
+				/*@editable*/ font-family:Georgia;
+				/*@editable*/ font-size:20px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
 				margin-top:0;
@@ -111,8 +112,8 @@
 			h4, .h4{
 				/*@editable*/ color:#202020;
 				display:block;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:22px;
+				/*@editable*/ font-family:Georgia;
+				/*@editable*/ font-size:16px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
 				margin-top:0;
@@ -131,7 +132,9 @@
 			* @theme page
 			*/
 			#templatePreheader{
-				/*@editable*/ background-color:#FAFAFA;
+				/*@editable*/ background-color:#003479;
+				background-image: url('http://www.brynmawr.edu/web/images/header.gif');
+				background-repeat:no-repeat;
 			}
 
 			/**
@@ -140,11 +143,16 @@
 			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
 			*/
 			.preheaderContent div{
-				/*@editable*/ color:#505050;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:10px;
+				/*@editable*/ color:#fff;
+				/*@editable*/ font-family:Georgia;
+				/*@editable*/ font-size:12px;
 				/*@editable*/ line-height:100%;
 				/*@editable*/ text-align:left;
+			}
+			.preheaderContent h4 {
+				color:#fff;
+				font-size:14px;
+				text-transform:uppercase;
 			}
 
 			/**
@@ -153,7 +161,7 @@
 			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
 			*/
 			.preheaderContent div a:link, .preheaderContent div a:visited, /* Yahoo! Mail Override */ .preheaderContent div a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#336699;
+				/*@editable*/ color:#fff0b3;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -174,7 +182,7 @@
 			* @theme header
 			*/
 			#templateHeader{
-				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ background-color:#000;
 				/*@editable*/ border-bottom:0;
 				border-spacing:0;
 			}
@@ -185,8 +193,8 @@
 			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
 			*/
 			.headerContent{
-				/*@editable*/ color:#202020;
-				/*@editable*/ font-family:Arial;
+				/*@editable*/ color:#fff;
+				/*@editable*/ font-family:Georgia;
 				/*@editable*/ font-size:34px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
@@ -201,14 +209,14 @@
 			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
 			*/
 			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#336699;
+				/*@editable*/ color:#fff0b3;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
 
 			#headerImage{
 				height:auto;
-				max-width:320px !important;
+				max-width:600px  !important;
 			}
 
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
@@ -219,7 +227,9 @@
 			* @tip Set the background color for your email's body area.
 			*/
 			#templateContainer, .bodyContent{
-				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ background-color:#DCE4ED;
+				background-image: url('http://www.brynmawr.edu/web/images/flower.gif');
+				background-repeat:no-repeat;
 			}
 
 			/**
@@ -230,8 +240,8 @@
 			*/
 			.bodyContent div{
 				/*@editable*/ color:#505050;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:12px;
+				/*@editable*/ font-family:Georgia;
+				/*@editable*/ font-size:14px;
 				/*@editable*/ line-height:150%;
 				/*@editable*/ text-align:left;
 			}
@@ -253,6 +263,11 @@
 				margin-bottom:10px;
 				max-width:280px;
 			}
+			
+			.bodyContent #lead {
+				font-size:16px;
+				
+			}
 
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
 
@@ -263,8 +278,10 @@
 			* @theme footer
 			*/
 			#templateFooter{
-				/*@editable*/ background-color:#FFFFFF;
-				/*@editable*/ border-top:0;
+				background-color:#003479;
+				border-top:0;
+				background-image: url('http://www.brynmawr.edu/web/images/footer.gif');
+				background-repeat:no-repeat;
 			}
 
 			/**
@@ -274,7 +291,7 @@
 			* @theme footer
 			*/
 			.footerContent div{
-				/*@editable*/ color:#707070;
+				/*@editable*/ color:#A2B5CE;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:11px;
 				/*@editable*/ line-height:150%;
@@ -287,7 +304,7 @@
 			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
 			*/
 			.footerContent div a:link, .footerContent div a:visited, /* Yahoo! Mail Override */ .footerContent div a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#336699;
+				/*@editable*/ color:#fff0b3;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -303,7 +320,7 @@
 			* @theme footer
 			*/
 			#social{
-				/*@editable*/ background-color:#FAFAFA;
+				/*@editable*/ background-color:transparent;
 				/*@editable*/ border:0;
 			}
 
@@ -323,7 +340,7 @@
 			* @theme footer
 			*/
 			#utility{
-				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ background-color:transparent;
 				/*@editable*/ border:0;
 			}
 
@@ -353,6 +370,19 @@
 					margin:0;	
 				}
 				
+				td[class=headerContent] h1, td[class=headerContent] h2 {
+					display:inline !important;
+					visibility:visible !important;
+				}
+				
+				td[class=headerContent] img[id=title] {
+					display:none !important;
+				}
+				td[class=headerContent] img[id=headerImage] {
+					width:100% !important;
+					max-width:600px !important;
+					height:auto !important;
+				}
 			}
 		</style>
 	</head>
