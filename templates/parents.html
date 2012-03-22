@@ -8,412 +8,275 @@
 		<meta name="viewport" content="initial-scale=1.0">
 		<title>%%emailname_%%</title>
 		<style type="text/css">
-			/* Client-specific Styles */
-			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
-			body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
-			body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
+/* Client-specific Styles */
+#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
 
-			/* Reset Styles */
-			body{margin:0; padding:0;}
-			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
-			table td{border-collapse:collapse;}
-			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+/* Reset Styles */
+body{margin:0; padding:0;}
+img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+table td{border-collapse:collapse;}
+#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
 
-			/* Template Styles */
+/* Template Styles */
 
-			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COMMON PAGE ELEMENTS /\/\/\/\/\/\/\/\/\/\ */
+/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COMMON PAGE ELEMENTS /\/\/\/\/\/\/\/\/\/\ */
 
-			/**
-			* @tab Page
-			* @section background color
-			* @tip Set the background color for your email. You may want to choose one that matches your company's branding.
-			* @theme page
-			*/
-			body, #backgroundTable{
-				 background-color:#8BA3C2;
-			}
+body, #backgroundTable{
+	background-color:#8BA3C2;
+}
+#templateContainer{
+	border-left: 1px solid #8BA3C2;
+	border-right:1px solid #8BA3C2;
+}
+h1, .h1{
+	color:#202020;
+	display:block;
+	font-family:Georgia;
+	font-size:28px;
+	font-weight:bold;
+	line-height:100%;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:10px;
+	margin-left:0;
+	text-align:left;
+}
+h2, .h2{
+	color:#202020;
+	display:block;
+	font-family:Georgia;
+	font-size:24px;
+	font-weight:bold;
+	line-height:100%;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:10px;
+	margin-left:0;
+	text-align:left;
+}
+h3, .h3{
+	color:#202020;
+	display:block;
+	font-family:Georgia;
+	font-size:20px;
+	font-weight:bold;
+	line-height:100%;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:10px;
+	margin-left:0;
+	text-align:left;
+}
+h4, .h4{
+	color:#202020;
+	display:block;
+	font-family:Georgia;
+	font-size:16px;
+	font-weight:bold;
+	line-height:100%;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:10px;
+	margin-left:0;
+	text-align:left;
+}
 
-			/**
-			* @tab Page
-			* @section email border
-			* @tip Set the border for your email.
-			*/
-			#templateContainer{
-				border-left: 1px solid #8BA3C2;
-				border-right:1px solid #8BA3C2;
-			}
+/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
 
-			/**
-			* @tab Page
-			* @section heading 1
-			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
-			* @style heading 1
-			*/
-			h1, .h1{
-				 color:#202020;
-				display:block;
-				 font-family:Georgia;
-				 font-size:28px;
-				 font-weight:bold;
-				 line-height:100%;
-				margin-top:0;
-				margin-right:0;
-				margin-bottom:10px;
-				margin-left:0;
-				 text-align:left;
-			}
+#templatePreheader{
+	background-color:#003479;
+	background-image: url('http://www.brynmawr.edu/web/images/header.gif');
+	background-repeat:no-repeat;
+}
+.preheaderContent div{
+	color:#fff;
+	font-family:Georgia;
+	font-size:12px;
+	line-height:100%;
+	text-align:left;
+}
+.preheaderContent h4 {
+	color:#fff;
+	font-size:14px;
+	text-transform:uppercase;
+}
+.preheaderContent div a:link, .preheaderContent div a:visited, /* Yahoo! Mail Override */ .preheaderContent div a .yshortcuts /* Yahoo! Mail Override */{
+	color:#fff0b3;
+	font-weight:normal;
+	text-decoration:underline;
+}
+.preheaderContent img{
+	display:inline;
+	height:auto;
+	margin-bottom:10px;
+	max-width:280px;
+}
 
-			/**
-			* @tab Page
-			* @section heading 2
-			* @tip Set the styling for all second-level headings in your emails.
-			* @style heading 2
-			*/
-			h2, .h2{
-				 color:#202020;
-				display:block;
-				 font-family:Georgia;
-				 font-size:24px;
-				 font-weight:bold;
-				 line-height:100%;
-				margin-top:0;
-				margin-right:0;
-				margin-bottom:10px;
-				margin-left:0;
-				 text-align:left;
-			}
+/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
 
-			/**
-			* @tab Page
-			* @section heading 3
-			* @tip Set the styling for all third-level headings in your emails.
-			* @style heading 3
-			*/
-			h3, .h3{
-			color:#202020;
-			display:block;
-			font-family:Georgia;
-			font-size:20px;
-			font-weight:bold;
-			line-height:100%;
-			margin-top:0;
-			margin-right:0;
-			margin-bottom:10px;
-			margin-left:0;
-			text-align:left;
-			}
+#templateHeader{
+	background-color:#00519C;
+	border-bottom:0;
+	border-spacing:0;
+}
+.headerContent{
+	color:#fff;
+	font-family:Georgia;
+	font-size:34px;
+	font-weight:bold;
+	line-height:100%;
+	padding:0;
+	text-align:center;
+	vertical-align:middle;
+}
+.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+	color:#fff0b3;
+	font-weight:normal;
+	text-decoration:underline;
+}
+#headerImage{
+	height:auto;
+	max-width:600px  !important;
+}
 
-			/**
-			* @tab Page
-			* @section heading 4
-			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
-			* @style heading 4
-			*/
-			h4, .h4{
-				 color:#202020;
-				display:block;
-				 font-family:Georgia;
-				 font-size:16px;
-				 font-weight:bold;
-				 line-height:100%;
-				margin-top:0;
-				margin-right:0;
-				margin-bottom:10px;
-				margin-left:0;
-				 text-align:left;
-			}
+/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
 
-			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
+#templateContainer, .bodyContent{
+	background-color:#DCE4ED;
+	background-image: url('http://www.brynmawr.edu/web/images/flower.gif');
+	background-repeat:no-repeat;
+}
+.bodyContent div{
+	color:#505050;
+	font-family:Georgia;
+	font-size:14px;
+	line-height:150%;
+	text-align:left;
+}
+.bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override */ .bodyContent div a .yshortcuts /* Yahoo! Mail Override */{
+	color:#005496;
+	font-weight:normal;
+	text-decoration:underline;
+}
+.bodyContent img{
+	display:inline;
+	height:auto;
+	margin-bottom:10px;
+	max-width:280px;
+}
+.bodyContent #lead {
+	font-size:16px;
+}
 
-			/**
-			* @tab Header
-			* @section preheader style
-			* @tip Set the background color for your email's preheader area.
-			* @theme page
-			*/
-			#templatePreheader{
-				 background-color:#003479;
-				background-image: url('http://www.brynmawr.edu/web/images/header.gif');
-				background-repeat:no-repeat;
-			}
+/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
 
-			/**
-			* @tab Header
-			* @section preheader text
-			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
-			*/
-			.preheaderContent div{
-				 color:#fff;
-				 font-family:Georgia;
-				 font-size:12px;
-				 line-height:100%;
-				 text-align:left;
-			}
-			.preheaderContent h4 {
-				color:#fff;
-				font-size:14px;
-				text-transform:uppercase;
-			}
-
-			/**
-			* @tab Header
-			* @section preheader link
-			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
-			*/
-			.preheaderContent div a:link, .preheaderContent div a:visited, /* Yahoo! Mail Override */ .preheaderContent div a .yshortcuts /* Yahoo! Mail Override */{
-				 color:#fff0b3;
-				 font-weight:normal;
-				 text-decoration:underline;
-			}
+#templateFooter{
+	background-color:transparent;
+	border-top:0;
+	background-image: url('http://www.brynmawr.edu/web/images/footer.gif');
+	background-repeat:no-repeat;
+	background-position:bottom left;
+}
+.footerContent div{
+	color:#A2B5CE;
+	font-family:Arial;
+	font-size:11px;
+	line-height:150%;
+	text-align:left;
+}
+.footerContent div a:link, .footerContent div a:visited, /* Yahoo! Mail Override */ .footerContent div a .yshortcuts /* Yahoo! Mail Override */{
+	color:#fff0b3;
+	font-weight:normal;
+	text-decoration:underline;
+}
+.footerContent img{
+	display:inline;
+}
+#social{
+	background-color:transparent;
+	border:0;
+}
+#social div{
+	text-align:left;
+	font-size:13px;
+}
+#social div a#twitter, #social div a#facebook, #social div a#forward {
+	padding: 2px 0 6px 18px;
+	height:18px;
+	margin:0;
+}
+#social div a#twitter {
+	background: url('http://www.brynmawr.edu/includes/images/ico-twitter.png') 0 0 no-repeat;
+	}
+#social div a#facebook {
+	background: url('http://www.brynmawr.edu/includes/images/ico-facebook.png') 0 0 no-repeat;
+}
+#social div a#forward {
+	background: url('http://www.brynmawr.edu/web/images/ico-forward.png') 0 2px no-repeat;
+}
+#utility{
+	background-color:transparent;
+	border:0;
+}
+#utility div{
+	text-align:left;
+}
 			
-			.preheaderContent img{
-				display:inline;
-				height:auto;
-				margin-bottom:10px;
-				max-width:280px;
-			}
-
-			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
-
-			/**
-			* @tab Header
-			* @section header style
-			* @tip Set the background color and border for your email's header area.
-			* @theme header
-			*/
-			#templateHeader{
-				 background-color:#00519C;
-				 border-bottom:0;
-				border-spacing:0;
-			}
-
-			/**
-			* @tab Header
-			* @section header text
-			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
-			*/
-			.headerContent{
-				 color:#fff;
-				 font-family:Georgia;
-				 font-size:34px;
-				 font-weight:bold;
-				 line-height:100%;
-				 padding:0;
-				 text-align:center;
-				 vertical-align:middle;
-			}
-
-			/**
-			* @tab Header
-			* @section header link
-			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
-			*/
-			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
-				 color:#fff0b3;
-				 font-weight:normal;
-				 text-decoration:underline;
-			}
-
-			#headerImage{
-				height:auto;
-				max-width:600px  !important;
-			}
-
-			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
-
-			/**
-			* @tab Body
-			* @section body style
-			* @tip Set the background color for your email's body area.
-			*/
-			#templateContainer, .bodyContent{
-				 background-color:#DCE4ED;
-				background-image: url('http://www.brynmawr.edu/web/images/flower.gif');
-				background-repeat:no-repeat;
-			}
-
-			/**
-			* @tab Body
-			* @section body text
-			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
-			* @theme main
-			*/
-			.bodyContent div{
-				 color:#505050;
-				 font-family:Georgia;
-				 font-size:14px;
-				 line-height:150%;
-				 text-align:left;
-			}
-
-			/**
-			* @tab Body
-			* @section body link
-			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
-			*/
-			.bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override */ .bodyContent div a .yshortcuts /* Yahoo! Mail Override */{
-				 color:#005496;
-				 font-weight:normal;
-				 text-decoration:underline;
-			}
-
-			.bodyContent img{
-				display:inline;
-				height:auto;
-				margin-bottom:10px;
-				max-width:280px;
-			}
-			
-			.bodyContent #lead {
-				font-size:16px;
+/*CSS for mobile devices. Attribute selector used so that Yahoo! mail will ignore styles*/
+@media (max-width:600px) {
 				
-			}
-
-			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
-
-			/**
-			* @tab Footer
-			* @section footer style
-			* @tip Set the background color and top border for your email's footer area.
-			* @theme footer
-			*/
-			#templateFooter{
-				background-color:transparent;
-				border-top:0;
-				background-image: url('http://www.brynmawr.edu/web/images/footer.gif');
-				background-repeat:no-repeat;
-				background-position:bottom left;
-			}
-
-			/**
-			* @tab Footer
-			* @section footer text
-			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
-			* @theme footer
-			*/
-			.footerContent div{
-				 color:#A2B5CE;
-				 font-family:Arial;
-				 font-size:11px;
-				 line-height:150%;
-				 text-align:left;
-			}
-
-			/**
-			* @tab Footer
-			* @section footer link
-			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
-			*/
-			.footerContent div a:link, .footerContent div a:visited, /* Yahoo! Mail Override */ .footerContent div a .yshortcuts /* Yahoo! Mail Override */{
-				 color:#fff0b3;
-				 font-weight:normal;
-				 text-decoration:underline;
-			}
-
-			.footerContent img{
-				display:inline;
-			}
-
-			/**
-			* Footer
-			* social bar style
-			*/
-			#social{
-				background-color:transparent;
-				border:0;
-			}
-			#social div{
-				text-align:left;
-				font-size:13px;
-			}
-			
-			#social div a#twitter, #social div a#facebook, #social div a#forward {
-				padding: 2px 0 6px 18px;
-				height:18px;
-				margin:0;
-			}
-			
-			#social div a#twitter {
-				background: url('http://www.brynmawr.edu/includes/images/ico-twitter.png') 0 0 no-repeat;
-			}
-			#social div a#facebook {
-				background: url('http://www.brynmawr.edu/includes/images/ico-facebook.png') 0 0 no-repeat;
-			}
-				#social div a#forward {
-					background: url('http://www.brynmawr.edu/web/images/ico-forward.png') 0 2px no-repeat;
-				}
-			/**
-			* Footer
-			* utility bar style
-			*/
-			#utility{
-			 background-color:transparent;
-			 border:0;
-			}
-
-			/**
-			* Footer
-			* utility bar style	*/
-			#utility div{
-				 text-align:left;
-			}
-			
-			/*CSS for mobile devices. Attribute selector used so that Yahoo! mail will ignore styles*/
-			@media (max-width:600px) {
+* { -webkit-text-size-adjust:none; }
 				
-				* { -webkit-text-size-adjust:none; }
-				
-				table[id=backgroundTable], table[id=templatePreheader], table[id=templateContainer], table[id=templateHeader], table[id=templateBody], table[id=templateFooter] {
-					width:100% !important;
-					max-width:600px !important;	
-					padding:0;
-					margin:0;	
-				}
-				
-				td[class=headerContent] h1, td[class=headerContent] h2 {
-					display:inline !important;
-					visibility:visible !important;
-					color:#fff;
-				}
-				
-				td[class=headerContent] h1.h1 {
-					font-size:20px;
-					float:left;
-					background-image: url(http://www.brynmawr.edu/web/images/wordmark-mobile.gif);
-					width:207px;
-					height:30px;
-					margin:0;
-					text-indent: 100%;
-					white-space: nowrap;
-					overflow: hidden;
-				}
-				td[class=headerContent] h2.h2 {
-					font-size:14px;
-					float:right;
-					background-image: url(http://www.brynmawr.edu/web/images/title-mobile.gif);
-					width:247px;
-					height:21px;
-					margin:0;
-					text-indent: 100%;
-					white-space: nowrap;
-					overflow: hidden;
-				}
-				
-				td[class=headerContent] img[id=title] {
-					display:none !important;
-				}
-				td[class=headerContent] img[id=headerImage] {
-					width:100% !important;
-					max-width:600px !important;
-					height:auto !important;
-				}
-				div[id=social] {
-					font-size:18px;
-				}
-				td[class=bodyContent] div {
-					font-size:18px;
-				}
-			}
+table[id=backgroundTable], table[id=templatePreheader], table[id=templateContainer], table[id=templateHeader], table[id=templateBody], table[id=templateFooter] {
+	width:100% !important;
+	max-width:600px !important;	
+	padding:0;
+	margin:0;	
+}
+td[class=headerContent] h1, td[class=headerContent] h2 {
+	display:inline !important;
+	visibility:visible !important;
+	color:#fff;
+}
+td[class=headerContent] h1.h1 {
+	font-size:20px;
+	float:left;
+	background-image: url(http://www.brynmawr.edu/web/images/wordmark-mobile.gif);
+	width:207px;
+	height:30px;
+	margin:0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+td[class=headerContent] h2.h2 {
+	font-size:14px;
+	float:right;
+	background-image: url(http://www.brynmawr.edu/web/images/title-mobile.gif);
+	width:247px;
+	height:21px;
+	margin:0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+td[class=headerContent] img[id=title] {
+	display:none !important;
+}
+td[class=headerContent] img[id=headerImage] {
+	width:100% !important;
+	max-width:600px !important;
+	height:auto !important;
+}
+div[id=social] {
+	font-size:18px;
+}
+td[class=bodyContent] div {
+	font-size:18px;
+}
+}
 		</style>
 	</head>
     <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
