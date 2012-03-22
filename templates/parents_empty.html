@@ -90,17 +90,17 @@
 			* @style heading 3
 			*/
 			h3, .h3{
-				 color:#202020;
-				display:block;
-				 font-family:Georgia;
-				 font-size:20px;
-				 font-weight:bold;
-				 line-height:100%;
-				margin-top:0;
-				margin-right:0;
-				margin-bottom:10px;
-				margin-left:0;
-				 text-align:left;
+			color:#202020;
+			display:block;
+			font-family:Georgia;
+			font-size:20px;
+			font-weight:bold;
+			line-height:100%;
+			margin-top:0;
+			margin-right:0;
+			margin-bottom:10px;
+			margin-left:0;
+			text-align:left;
 			}
 
 			/**
@@ -252,7 +252,7 @@
 			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
 			*/
 			.bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override */ .bodyContent div a .yshortcuts /* Yahoo! Mail Override */{
-				 color:#336699;
+				 color:#005496;
 				 font-weight:normal;
 				 text-decoration:underline;
 			}
@@ -278,10 +278,11 @@
 			* @theme footer
 			*/
 			#templateFooter{
-				background-color:#003479;
+				background-color:transparent;
 				border-top:0;
 				background-image: url('http://www.brynmawr.edu/web/images/footer.gif');
 				background-repeat:no-repeat;
+				background-position:bottom left;
 			}
 
 			/**
@@ -313,33 +314,34 @@
 				display:inline;
 			}
 
-				/**
-				* Footer
-				* social bar style
-				*/
-				#social{
-					background-color:transparent;
-					border:0;
+			/**
+			* Footer
+			* social bar style
+			*/
+			#social{
+				background-color:transparent;
+				border:0;
+			}
+			#social div{
+				text-align:left;
+				font-size:13px;
+			}
+			
+			#social div a#twitter, #social div a#facebook, #social div a#forward {
+				padding: 2px 0 6px 18px;
+				height:18px;
+				margin:0;
+			}
+			
+			#social div a#twitter {
+				background: url('http://www.brynmawr.edu/includes/images/ico-twitter.png') 0 0 no-repeat;
+			}
+			#social div a#facebook {
+				background: url('http://www.brynmawr.edu/includes/images/ico-facebook.png') 0 0 no-repeat;
+			}
+				#social div a#forward {
+					background: url('http://www.brynmawr.edu/web/images/ico-forward.png') 0 2px no-repeat;
 				}
-				#social div{
-					text-align:left;
-					font-size:12px;
-				}
-
-				#social div a#twitter, #social div a#facebook, #social div a#forward {
-					padding: 2px 0 6px 18px;
-					height:18px;
-					margin:0;
-				}
-
-				#social div a#twitter {
-					background: url('http://www.brynmawr.edu/includes/images/ico-twitter.png') 0 0 no-repeat;
-				}
-				#social div a#facebook {
-					background: url('http://www.brynmawr.edu/includes/images/ico-facebook.png') 0 0 no-repeat;
-				}
-
-
 			/**
 			* Footer
 			* utility bar style
@@ -404,6 +406,12 @@
 					width:100% !important;
 					max-width:600px !important;
 					height:auto !important;
+				}
+				div[id=social] {
+					font-size:18px;
+				}
+				td[class=bodyContent] div {
+					font-size:18px;
 				}
 			}
 		</style>
