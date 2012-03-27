@@ -164,8 +164,8 @@ h4, .h4{
 				
 * { -webkit-text-size-adjust:none; }
 				
-table[id=backgroundTable], table[id=templatePreheader], table[id=templateContainer], table[id=templateHeader], table[id=templateBody], table[id=templateFooter] {
-	width:300px !important;
+table[id=backgroundTable], table[id=templatePreheader], table[id=templateContainer], table[id=templateHeader], table[id=templateBody], table[id=templateFooter], td[class=headerContent], td[class=bodyContent], td[class=footerContent] {
+	width:100% !important;
 	max-width:320px !important;	
 	padding:0;
 	margin:0;	
@@ -218,7 +218,7 @@ td[class=bodyContent] div {
             	<tr>
                 	<td align="center" valign="top">
                         <!-- // Begin Template Preheader \\ -->
-                        <table border="0" cellpadding="20" cellspacing="0" width="600" id="templatePreheader" style="background-color:#003479; background-image: url('http://image.exct.net/lib/fef1127172630d/i/1/b9a0fe19-2.gif'); background-repeat:repeat-y;">
+                        <table border="0" cellpadding="20" cellspacing="0" width="600" id="templatePreheader" style="background-color:#003479; background-image: url('http://image.exct.net/lib/fef1127172630d/i/1/b9a0fe19-2.gif'); background-repeat:repeat-y;width:100%;">
                             <tr>
                                 <td valign="top" class="preheaderContent">
                                 
@@ -227,7 +227,6 @@ td[class=bodyContent] div {
                                     	<tr>
                                         	<td valign="top">
                                             	<div style="color:#fff; font-family:Georgia; font-size:12px; line-height:100%; text-align:left;">
-													<custom name="opencounter" type="tracking">
 														<custom type="content" name="In This Issue">
 	
                                                 	<h4 style="display:block; font-family:Georgia; font-weight:bold; line-height:100%; margin-top:0; margin-right:0; margin-bottom:10px; margin-left:0; text-align:left;	color:#fff; font-size:14px; text-transform:uppercase;">In this issue:</h4>
@@ -334,16 +333,10 @@ Hepburn Teaching Theater, Goodhart Hall
 <br />
 <br />
 <h3 id="news" style="color:#202020;display:block;font-family:Georgia; font-size:20px; font-weight:bold; line-height:100%; margin-top:0; margin-right:0; margin-bottom:10px; margin-left:0; text-align:left;">News you can use!</h3>
-<h4 style="color:#202020; display:block; font-family:Georgia; font-size:16px; font-weight:bold; line-height:100%; margin-top:0; margin-right:0; margin-bottom:10px; margin-left:0; text-align:left;">If your daughter is a senior...</h4>
-<a href="http://www.brynmawr.edu/conferences/commencement/" target="_blank" style="color:#005496;font-weight:normal;text-decoration:underline;"><strong>Convocation and Commencement</strong></a> for the Class of 2012 will be held on Friday 12 May and Saturday 13 May.
-<br />
-<br />
-The full schedule of activities for the most important weekend of your Mawrter's life may be found <a href="http://www.brynmawr.edu/conferences/commencement/" target="_blank" style="color:#005496;font-weight:normal;text-decoration:underline;">on our website</a>. Lodging information, accessibility information, maps, directions and move out information may be found on the website. If you have questions, please do not hesitate to call the Information Desk at (610) 526-7330
-<br />
-<br />
-<a href="http://www.haverford.edu/cdo" target="_blank" style="color:#005496;font-weight:normal;text-decoration:underline;"><strong>Career Development Office</strong></a>
-<br />
-The Bi-Co Career Development Office offers students resume` review, networking services, career counseling help and a host of other services. If your daughter has not yet connected with the "CDO" it is not too late to get started. Bryn Mawr offers current students and alumnae help in every aspect of the career search. <a href="http://www.haverford.edu/cdo" target="_blank" style="color:#005496;font-weight:normal;text-decoration:underline;">Visit their website</a> to learn about all they have to offer!
+
+<div id="content-last">
+<custom type="content" name="News">
+</div>
 <br />
 <br />
 
@@ -423,5 +416,7 @@ The Bi-Co Career Development Office offers students resume` review, networking s
                 </tr>
             </table>
         </center>
+		<custom name="opencounter" type="tracking">
+
     </body>
 </html>
