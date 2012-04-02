@@ -5,7 +5,7 @@
         
         <!-- Facebook sharing information tags -->
         <meta property="og:title" content="%%emailname_%%" />
-		<meta name="viewport" content="initial-scale=1.0">
+		<meta name="viewport" content="width=device-width">
 		<title>%%emailname_%%</title>
 		
 	</head>
@@ -157,6 +157,7 @@ h4, .h4{
 		max-width:600px !important;	
 		padding:0;
 		margin:0;	
+		display:block !important;
 	}	
 }
 
@@ -169,6 +170,7 @@ table[id=backgroundTable], table[id=templatePreheader], table[id=templateContain
 	max-width:480px !important;	
 	padding:0;
 	margin:0;	
+	font-size:200% !important;
 }
 
 td[class=headerContent] {
@@ -223,7 +225,18 @@ td[class=bodyContent] div {
 		max-width:320px !important;	
 		padding:0;
 		margin:0;	
+		font-size:200% !important;
 	}	
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+		table[id=backgroundTable], table[id=templatePreheader], table[id=templateContainer], table[id=templateHeader], table[id=templateBody], table[id=templateFooter] {
+			width:580px !important;
+			max-width:600px !important;	
+			padding:0;
+			margin:0;	
+			font-size:200% !important;
+		}	
+	
 }
 		</style>
     	<center>
