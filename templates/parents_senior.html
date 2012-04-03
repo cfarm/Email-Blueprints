@@ -39,7 +39,7 @@ h2, .h2{
 	
 }
 h3, .h3{
-	color:#202020;display:block;font-family:Georgia; font-size:20px; font-weight:bold; line-height:100%; margin-top:0; margin-right:0; margin-bottom:10px; margin-left:0; text-align:left;
+	color:#202020;display:block;font-family:Georgia; font-size:20px; font-weight:bold; line-height:100%; margin-top:0; margin-right:0; margin-bottom:10px; margin-left:0; text-align:left; border-bottom:1px solid #5C6F7C; padding-bottom:6px;
 }
 h4, .h4{
 	color:#202020;
@@ -152,7 +152,7 @@ h4, .h4{
 			
 /*CSS for mobile devices. Attribute selector used so that Yahoo! mail will ignore styles*/
 @media only screen and (max-width: 600px) {
-	table[id=backgroundTable], table[id=templatePreheader], table[id=templateContainer], table[id=templateHeader], table[id=templateBody], table[id=templateFooter] {
+	table[id=backgroundTable], table[id=templatePreheader], table[id=templateContainer], table[id=templateHeader], table[id=templateBody], table[id=templateFooter], td[class=headerContent] img[id=title] {
 		width:99% !important;
 		max-width:600px !important;	
 		padding:0;
@@ -165,14 +165,14 @@ h4, .h4{
 				
 * { -webkit-text-size-adjust:none; }
 				
-table[id=backgroundTable], table[id=templatePreheader], table[id=templateContainer], table[id=templateHeader], table[id=templateBody], table[id=templateFooter] {
+/*table[id=backgroundTable], table[id=templatePreheader], table[id=templateContainer], table[id=templateHeader], table[id=templateBody], table[id=templateFooter] {
 	width:460px  !important;
 	max-width:480px !important;	
 	padding:0;
 	margin:0;	
 	font-size:200% !important;
 }
-
+*/
 td[class=headerContent] {
 	height:51px !important;
 }
@@ -205,7 +205,7 @@ td[class=headerContent] h2.h2 {
 	overflow: hidden;
 }
 td[class=headerContent] img[id=title] {
-	display:none !important;
+	width:100% !important;
 }
 td[class=headerContent] img[id=headerImage] {
 	width:100% !important;
@@ -236,6 +236,7 @@ td[class=bodyContent] div {
 			margin:0;	
 			font-size:200% !important;
 		}	
+	}
 	
 }
 		</style>
@@ -279,11 +280,11 @@ td[class=bodyContent] div {
                                         <tr>
                                             <td class="headerContent" style="color:#fff;font-family:Georgia;font-size:34px; font-weight:bold; line-height:100%; padding:0; text-align:center; vertical-align:middle;height:30px;background-color:#00519C;">
 	
-                                            <a href="http://www.brynmawr.edu/gateways/parents" style="	color:#fff0b3; font-weight:normal; text-decoration:underline;"><img src="http://www.brynmawr.edu/web/images/title.gif" alt="Bryn Mawr College News for Parents and Families" title="Bryn Mawr College News for Parents and Families" id="title" style="position:relative;z-index:10;border:0;"></a>
+                                            <a href="http://www.brynmawr.edu/gateways/parents" style="color:#fff0b3; font-weight:normal; text-decoration:underline;display:block;width:inherit;"><img src="http://www.brynmawr.edu/web/images/title.gif" alt="Bryn Mawr College News for Parents and Families" title="Bryn Mawr College News for Parents and Families" id="title" style="position:relative;z-index:10;border:0;"></a>
 
 
                                             	<!-- // Begin Module: Standard Header Image \\ -->
-                                            	<img src="http://www.brynmawr.edu/web/images/hero.jpg" style="max-width:600px;" id="headerImage" style="height:auto;max-width:600px !important;"/>
+                                            	<img src="http://www.brynmawr.edu/web/images/hero.jpg" id="headerImage" style="position:relative;display:block;height:auto;width:100%; max-width:600px;"/>
                                             	<!-- // End Module: Standard Header Image \\ -->
                                             
                                             </td>
@@ -319,7 +320,7 @@ td[class=bodyContent] div {
 </div>
 
 <br />
-<h3 id="news" style="color:#202020;display:block;font-family:Georgia; font-size:20px; font-weight:bold; line-height:100%; margin-top:0; margin-right:0; margin-bottom:10px; margin-left:0; text-align:left;">News you can use!</h3>
+<h3 id="news" style="color:#202020;display:block;font-family:Georgia; font-size:20px; font-weight:bold; line-height:100%; margin-top:0; margin-right:0; margin-bottom:10px; margin-left:0; text-align:left;border-bottom:1px solid #5C6F7C; padding-bottom:6px">News you can use!</h3>
 
 <div id="content-3" style="color:#505050 !important; font-family:Georgia !important; font-size:14px !important; line-height:150% !important; text-align:left !important;">
 <custom type="content" name="News">
